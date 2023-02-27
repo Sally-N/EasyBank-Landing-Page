@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+
+.footer {
+    background: #2d314d;
+    /* padding: 4rem 4rem 0 4rem; */
+    color: #fff;
+    height: 200px;
+    padding: 30px 0 0 0;
+    /* background-color: #2d314d; */
+    /* margin-top: 400px; */
+
+}
+
+.footer-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoandicons {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logoandicons .icons {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 50px;
+}
+
+.logo-footer {
+    margin-bottom: 30px;
+
+}
+
+/* .logo-footer img {
+    background-image: white;
+} */
+
+
+.icons {
+    padding: 30px 0 0 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.icons img:hover{
+    color: #31d35c;
+}
+
+.text-white{
+    color: white;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+    /*adjust the width compared to the container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links ul li {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    color: #31d35c;
+
+}
+
+.footer-right {
+    flex-direction: column;
+    position: absolute;
+    right: 80px;
+}
+
+#request-invitebtn {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+h6 span {
+    font-family: 'Public Sans', sans-serif;
+}

@@ -4,35 +4,44 @@ import youtubeicon from "../images/icon-youtube.svg";
 import twittericon from "../images/icon-twitter.svg";
 import pinteresticon from "../images/icon-pinterest.svg";
 import instagramicon from "../images/icon-instagram.svg";
+import "./footer.css"
 
 
 const Footer = () => {
-    return (<div>
-        <img src={logo} alt="" />
-        <div className="icons">
-            <img src={facebookicon} alt="" />
-            <img src={youtubeicon} alt="" />
-            <img src={twittericon} alt="" />
-            <img src={pinteresticon} alt="" />
-            <img src={instagramicon} alt="" />
-        </div>
-        <div className="footer-links">
-            <a href="a">About Us</a>
-            <a href="#a">Contact</a>
-            <a href="#b">Blog</a>
-            <a href="#c">Careers</a>
-            <a href="#d">Support</a>
-            <a href="#f">Privacy Policy</a>
+    return (
+        <div className="footer">
+            <div className="container footer-contain">
+                <div className="logoandicons">
+                    <div className="logo-footer">
+                        <img src={logo} className="text-white" alt="logo footer" />
+                    </div>
 
-        </div>
-        <div className="request-invites">
-            <button id="request-invitebtn">Request Invite</button>
-        </div>
-        <div className="copyright">
-            <h6><span>&#169;</span>EasyBank.AllRightsReserved</h6>
-        </div>
+                    <div className="icons">
+                        <img src={facebookicon} alt="facebook" />
+                        <img src={youtubeicon} alt="youtube" />
+                        <img src={twittericon} alt="twitter" />
+                        <img src={pinteresticon} alt="pinterest" />
+                        <img src={instagramicon} alt="instagram" />
+                    </div>
+                </div>
+                <div className="footer-links">
+                    <ul>
+                        <li><a href="a">About Us</a></li>
+                        <li><a href="#a">Contact</a></li>
+                        <li><a href="#b">Blog</a></li>
+                        <li> <a href="#c">Careers</a></li>
+                        <li><a href="#d">Support</a></li>
+                        <li><a href="#f">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div className="footer-right">
+                    <button id="request-invitebtn">Request Invite</button>
 
-    </div>
+                    <h6><span>&#169;</span>EasyBank.AllRightsReserved</h6>
+
+                </div>
+            </div>
+        </div>
     )
 }
 

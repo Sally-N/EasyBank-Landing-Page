@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+.articlesSection {
+    height: 400px;
+    background-color: #f1f1f4;
+}
+
+section h2 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.articles {
+    flex-wrap: row wrap;
+    margin-top: 40px;
+
+}
+
+.articleSingle {
+    height: 450px;
+    width: 300px;
+    background-color: white;
+
+}
+
+.articleSingle .image {
+    height: 200px;
+    width: 100%;
+    padding: 0;
+
+
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    padding: 30px 30px 0 20px;
+}
+
+.text h6 {
+    color: #9698a6;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+.text h3 {
+    padding-top: 8px;
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.text h3:hover {
+    color: #31d35c;
+}
+
+.text p {
+    padding-top: 8px;
+    color: #9698a6;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Public Sans', sans-serif;
+
+}

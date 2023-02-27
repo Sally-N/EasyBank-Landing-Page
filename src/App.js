@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar/navbar";
 import Footer from "./Components/Footer/footer";
-import { ReasonsWhy } from "./Components/Hero/reasonsWhy"
+import { ReasonsWhy } from "./Components/Hero/reasonsWhy";
+import { Articles } from "./Components/Articles/articles";
 // eslint-disable-next-line no-unused-vars
 
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Navbar />
       <ReasonsWhy />
+      <Articles />
       <Footer />
 
 
