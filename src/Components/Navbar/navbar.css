@@ -3,33 +3,92 @@
 
 
 
-.navbar{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   height: 100px;
-   /* position: fixed; */
+.navbar {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+.navbar .logo {
+    /* border: solid 2px blue; */
+    justify-content: center;
 }
 
 
-.navbar ul{
+
+
+.navbar ul {
+    /* background-color: red; */
     /* width: 200px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.navbar ul li{
+.navbar ul li {
+    /* color: black; */
     list-style: none;
-    margin: 0 20px 0 20px;
+    margin: 0 10px 0 20px;
     font-family: 'Public Sans', sans-serif;
 }
 
-.navbar .request-invites button{
-    width: 150px;
-    height: 40px;
-    border-radius: 50px;
+.navbar ul li a {
+    color: #9698a6;
+    /* margin: 0 20px 0 20px; */
+    font-family: 'Public Sans', sans-serif;
 }
 
 
+.navbar ul li a:hover {
+    color: #2d314d;
+
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    height: 3px;
+    width: 49px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    top: 3rem;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.navbar ul li a:hover::after {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    top: 4.7rem;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.navbar .invitation {
+    width: 160px;
+    height: 40px;
+
+}
+
+.invitation button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    border: transparent;
+    font-family: 'Public Sans', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}

@@ -1,45 +1,136 @@
-section  {
-    padding-top: 70px;
-    width: 100%;
-    margin: 0;
-    height: 1000px;
+.content {
+    height: 600px;
+    border: solid 2px red;
+    background: url('../images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 600px;
+    background-position-y: -260px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start
 }
 
-.flex {
-    margin-right: 0;
-    padding-right: 0;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    background: url("../images/bg-intro-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: right;
+
+.imagemock {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+.imagemock img {
+    position: relative;
+    float: right;
+    object-fit: cover;
+    transform: translate(110px, -75px);
 }
 
 .next-generation {
-    width: 70%;
+    border: solid 2px green;
+    height: 400px;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 35px 0 35px;
+
 }
 
 .next-generation h2 {
-    font-weight: 700;
-    font-size: 40px;
-    color: gray;
-}
-
-
-.why-easybank{
+    /* width: auto; */
+    font-weight: 400;
+    font-size: 50px;
+    color: black;
     font-family: 'Public Sans', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.next-generation p {
+    width: auto;
+    text-align: center;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+
+.request-invites {
+    width: 160px;
+    height: 40px;
+    margin: auto;
+}
+
+.request-invites button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    border: transparent;
+    font-family: 'Public Sans', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 
+.why-easybank {
+    background-color: #f3f4f6;
+    height: 800px;   
 
-.reasonswhygrid{
+}
+
+.text-content{
+    border: solid 3px green;
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 35px 0 35px;
+}
+
+
+.text-content h5{
+    font-weight: 400;
+    font-size: 50px;
+    color: black;
+    font-family: 'Public Sans', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.text-content p{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    }
+
+.reasonswhygrid {
+    height: 450px;
+    margin-top: 20px;
+    border: 2px solid purple;
+    padding-top: 10px;
     display: flex;
     flex-direction: row wrap;
+    align-content: center;
+
 }
 
+.reason .icon{
+    margin-bottom: 40px;
+
+}
+
+.reason h2{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+
+}
+
+.reason p{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);  
+}

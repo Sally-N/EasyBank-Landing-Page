@@ -1,4 +1,4 @@
-import Navbar from "./Components/Navbar/navbar";
+import { Navbar } from "./Components/Navbar/navbar";
 import Footer from "./Components/Footer/footer";
 import { ReasonsWhy } from "./Components/Hero/reasonsWhy";
 import { Articles } from "./Components/Articles/articles";

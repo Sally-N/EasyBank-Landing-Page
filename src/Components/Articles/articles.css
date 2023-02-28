@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 .articlesSection {
-    height: 400px;
+    background-color: black;
+    height: 600px;
     background-color: #f1f1f4;
 }
 

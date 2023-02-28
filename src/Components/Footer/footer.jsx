@@ -10,7 +10,8 @@ import "./footer.css"
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="container footer-contain">
+            <div className="container">
+                <div className="footer-contain">
                 <div className="logoandicons">
                     <div className="logo-footer">
                         <img src={logo} className="text-white" alt="logo footer" />
@@ -41,7 +42,9 @@ const Footer = () => {
 
                 </div>
             </div>
+            </div>
         </div>
+        
     )
 }
 

@@ -17,6 +17,8 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .logoandicons {
@@ -37,9 +39,6 @@
 
 }
 
-/* .logo-footer img {
-    background-image: white;
-} */
 
 
 .icons {
