@@ -80,3 +80,13 @@
     font-family: 'Public Sans', sans-serif;
 
 }
+
+@media screen and (min-width: 1024px){
+   .articlesSection{ height: 700px;
+   }
+
+   .allArticles{
+    padding-top: 80px;
+   }
+    
+}

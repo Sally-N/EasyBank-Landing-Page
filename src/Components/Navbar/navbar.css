@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
-
-
-
 .navbar {
     overflow: hidden;
     position: sticky;
@@ -115,3 +112,37 @@
     align-items: center;
 
 }
+
+.menu-hidden{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .navbar{
+        height: 65px;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar .invitation{
+        display: none;
+    }
+
+    .menu-hidden{
+        display: contents;
+    }
+
+    .modal-hidden{
+        display: none;
+    }
+
+    .modal-visible{
+        display: contents;
+    }
+    
+}
+
