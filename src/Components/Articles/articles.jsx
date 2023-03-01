@@ -41,23 +41,27 @@ const articlesContents = [
 
 export const Articles = () => {
     return (
-        <section className="container artclesSection">
-            <h2>Latest Articles</h2>
-            <div className="articles row">
-                {articlesContents.map((article) =>
-                (
-                    <div key={article.heading} className="col articleSingle">
-                        <div className="image">
-                            <img src={article.imgPath} alt="" />
-                        </div>
-                        <div className="text">
-                            <h6>{article.writer}</h6>
-                            <h3> {article.heading}</h3>
-                            <p> {article.content}</p>
-                        </div>
-                    </ div>
-                ))
-                }
+        <section className="articlesSection">
+            <div className="container">
+                <div className="allArticles">
+                    <h2>Latest Articles</h2>
+                    <div className="articles row">
+                        {articlesContents.map((article) =>
+                        (
+                            <div key={article.heading} className="col articleSingle">
+                                <div className="imageA">
+                                    <img src={article.imgPath} alt="" />
+                                </div>
+                                <div className="text">
+                                    <h6>{article.writer}</h6>
+                                    <h3> {article.heading}</h3>
+                                    <p> {article.content}</p>
+                                </div>
+                            </ div>
+                        ))
+                        }
+                    </div>
+                </div>
             </div>
         </section>
     );

@@ -1,63 +1,67 @@
+.reasonsSection {
+    height: 1500px;
+    background-color: hsl(0, 0%, 98%);
+}
+
 .content {
-    height: 600px;
-    border: solid 2px red;
+    padding: 0;
+    margin: 0;
     background: url('../images/bg-intro-desktop.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: 600px;
-    background-position-y: -260px;
+    background-position-x: 550px;
+    background-position-y: -160px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start
-}
+    flex-direction: row;
+    align-items: flex-start;
+    height: 700px;
 
-
-.imagemock {
+} 
+.imagemock{
     overflow: hidden;
-    object-fit: cover;
-}
 
+}
 
 .imagemock img {
-    position: relative;
     float: right;
-    object-fit: cover;
-    transform: translate(110px, -75px);
+    transform: translate(110px, -70px);
 }
 
 .next-generation {
-    border: solid 2px green;
+    margin-left: 90px;
+    margin-top: 100px;
+    /* border: solid 2px green; */
     height: 400px;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     padding: 0px 35px 0 35px;
+    text-align: left;
 
 }
 
 .next-generation h2 {
-    /* width: auto; */
     font-weight: 400;
     font-size: 50px;
-    color: black;
+    color: hsl(233, 26%, 24%);
     font-family: 'Public Sans', sans-serif;
     margin-bottom: 0;
     padding-bottom: 20px;
 }
 
 .next-generation p {
+    color: hsl(233, 8%, 62%);
     width: auto;
-    text-align: center;
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
 }
 
 .request-invites {
     width: 160px;
     height: 40px;
-    margin: auto;
 }
 
 .request-invites button {
@@ -76,12 +80,11 @@
 
 .why-easybank {
     background-color: #f3f4f6;
-    height: 800px;   
+    height: 800px;
 
 }
 
-.text-content{
-    border: solid 3px green;
+.text-content {
     height: 300px;
     width: 50%;
     display: flex;
@@ -91,24 +94,25 @@
 }
 
 
-.text-content h5{
+.text-content h5 {
     font-weight: 400;
     font-size: 50px;
-    color: black;
+    color: hsl(233, 26%, 24%);
     font-family: 'Public Sans', sans-serif;
     margin-bottom: 0;
     padding-bottom: 20px;
 }
 
-.text-content p{
+.text-content p {
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
-    }
+    color: hsl(233, 8%, 62%);
+}
 
 .reasonswhygrid {
     height: 450px;
     margin-top: 20px;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     padding-top: 10px;
     display: flex;
     flex-direction: row wrap;
@@ -116,21 +120,21 @@
 
 }
 
-.reason .icon{
+.reason .icon {
     margin-bottom: 40px;
 
 }
 
-.reason h2{
+.reason h2 {
     font-family: 'Public Sans', sans-serif;
     font-size: 21px;
     font-weight: 700;
 
 }
 
-.reason p{
+.reason p {
     font-family: 'Public Sans', sans-serif;
     font-size: 17px;
     font-weight: 300;
-    color: hsl(233, 8%, 62%);  
+    color: hsl(233, 8%, 62%);
 }

@@ -3,12 +3,10 @@
 
 .footer {
     background: #2d314d;
-    /* padding: 4rem 4rem 0 4rem; */
     color: #fff;
     height: 200px;
     padding: 30px 0 0 0;
-    /* background-color: #2d314d; */
-    /* margin-top: 400px; */
+
 
 }
 
@@ -96,6 +94,20 @@ ul li a:hover{
     flex-direction: column;
     position: absolute;
     right: 80px;
+}
+
+
+#request-invitebtn{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    border: transparent;
+    font-family: 'Public Sans', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 #request-invitebtn {

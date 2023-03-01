@@ -1,45 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 .articlesSection {
-    background-color: black;
-    height: 600px;
-    background-color: #f1f1f4;
+    /* border: solid 2px black; */
+    height: 750px;
+    background-color:hsl(0, 0%, 98%)
 }
 
-section h2 {
+.allArticles{
+    /* border: solid 2px green; */
+    padding-top: 70px;
+}
+
+.allArticles h2 {
     font-family: 'Public Sans', sans-serif;
     font-size: 40px;
     margin-bottom: 40px;
+    color: hsl(233, 26%, 24%)
 }
 
 .articles {
     flex-wrap: row wrap;
     margin-top: 40px;
+    background-color: hsl(0, 0%, 98%);
 
 }
 
 .articleSingle {
+    padding: 0;
+    margin: 0 10px;
+    /* border: solid 2px orange; */
     height: 450px;
-    width: 300px;
+    width: 280px;
     background-color: white;
 
 }
 
-.articleSingle .image {
-    height: 200px;
+.articleSingle .imageA {
+    height: 180px;
     width: 100%;
     padding: 0;
 
 
 }
 
-.image img {
+.imageA img {
     height: 100%;
     width: 100%;
 }
 
 .text {
-    padding: 30px 30px 0 20px;
+    padding: 30px 20px 0 20px;
 }
 
 .text h6 {

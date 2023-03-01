@@ -38,32 +38,28 @@ const reasonsWhyItems = [
 
 export const ReasonsWhy = () => {
     return (
-        <section>
+        <section className="reasonsSection">
+             <div className="bg-header-mobile bg-custom-mobile-header-size absolute w-full h-full bg-no-repeat lg:hidden"></div>
             <div className="content">
-                <div className="next-generation container">
-
-                    <div className="next">
-                        <h2>
-                            Next generation digital banking
-                        </h2>
-                        <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-                        <div className="request-invites">
-                            <button id="request-invitebtn">Request Invite</button>
-                        </div>
+                <div className="next-generation">
+                    <h2>
+                        Next generation digital banking
+                    </h2>
+                    <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+                    <div className="request-invites">
+                        <button id="request-invitebtn">Request Invite</button>
                     </div>
-
-
                 </div>
+
                 <div className="imagemock">
-                    {/* <img src={intro} alt="" />  */}
                     <img src={mockupImg} alt="phones images" />
                 </div>
             </div>
+
+
             <div className="why-easybank">
                 <div className="container">
                     <div className="why-eaybankection">
-
-
                         <div className="text-content">
 
                             <h5>
@@ -73,9 +69,6 @@ export const ReasonsWhy = () => {
                                 financial hub. Control your finances like never before.</p>
 
                         </div>
-
-
-
                         <div className="reasonswhygrid row">
                             {
                                 reasonsWhyItems.map((item) =>
@@ -97,7 +90,7 @@ export const ReasonsWhy = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
 
     )
 };
