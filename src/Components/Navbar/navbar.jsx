@@ -5,7 +5,6 @@ import menuIcon from "../images/icon-hamburger.svg"
 
 
 export const Navbar = () => {
-
     return (
         <div className="navbar">
             <div className="container">
@@ -27,42 +26,37 @@ export const Navbar = () => {
                     <div className="invitation">
                         <button className="invitation-btn">Request Invite</button>
                     </div>
-                    <button className="menu-hidden" >
-                        <img src={menuIcon} alt="menuImage" id="menuIcon" />
-
+                    <button id="menuBtn" style={{display: "none"}}>
+                        <img src={menuIcon} alt="menuImage"  />
                     </button>
                 </div>
 
             </div>
         </div>
 
+
+
     )
-
-}
-const modal = document.getElementById("modal");
-
-function displayModal() {
-    modal.classList.remove("modal-hidden");
-    modal.classList.add("modal-visible");
-
 }
 
-document.getElementById("menuIcon").addEventListener("click", displayModal)
 
 
-
-
-export const HomeModal = () => {
-    <div className="modal modal-hidden" id="modal">
-        <div className="container">
-            <ul className="mobile-modal">
-                <li className="mobileMenuitem">Home</li>
-                <li className="mobileMenuitem">About</li>
-                <li className="mobileMenuitem">Contact</li>
-                <li className="mobileMenuitem">Blog</li>
-                <li className="mobileMenuitem">Careers</li>
-            </ul>
+export const MobileModal = () => {
+    return (
+        <div id="modal" style={{ display: "none" }}>
+            <div className="container">
+                <ul className="mobile-modal">
+                    <li className="mobileMenuitem">Home</li>
+                    <li className="mobileMenuitem">About</li>
+                    <li className="mobileMenuitem">Contact</li>
+                    <li className="mobileMenuitem">Blog</li>
+                    <li className="mobileMenuitem">Careers</li>
+                </ul>
+            </div>
         </div>
-    </div>
+    )
 }
+
+
+
 

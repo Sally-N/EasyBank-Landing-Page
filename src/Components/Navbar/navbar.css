@@ -21,7 +21,7 @@
 }
 
 .navbarNavbar .logo {
- justify-content: center;
+    justify-content: center;
 }
 
 .navbarNavbar ul {
@@ -94,14 +94,18 @@
     font-size: 14px;
 }
 
-.modal {
+.modal-invisible {
+    display: none;
+}
+
+#modal {
     height: 200px;
     width: 150px;
     display: flex;
     flex-direction: column;
 }
 
-.modal .mobile-modal {
+#modal .mobile-modal {
     height: 100%;
     width: 100%;
 }
@@ -113,36 +117,28 @@
 
 }
 
-.menu-hidden{
-    display: none;
-}
-
 
 @media screen and (min-width: 768px) {
 
-    .navbar{
+    .navbar {
         height: 65px;
     }
-
-    .navbar ul{
-        display: none;
-    }
-
-    .navbar .invitation{
-        display: none;
-    }
-
-    .menu-hidden{
-        display: contents;
-    }
-
-    .modal-hidden{
-        display: none;
-    }
-
-    .modal-visible{
-        display: contents;
-    }
-    
 }
 
+
+@media screen and (max-width: 912px) {
+
+    .navbar ul {
+        display: none;
+    }
+
+    #menuBtn{
+        display: contents;
+    }
+
+    .invitation {
+        display: none;
+    }
+
+
+}
