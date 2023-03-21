@@ -6,11 +6,10 @@
     color: #fff;
     height: 200px;
     padding: 30px 0 0 0;
-
-
 }
 
-.footer-contain{
+.footer-contain {
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -37,8 +36,6 @@
 
 }
 
-
-
 .icons {
     padding: 30px 0 0 0;
     flex-direction: row;
@@ -46,22 +43,19 @@
     align-items: center;
 }
 
-
-.icons img:hover{
+.icons img:hover {
     color: #31d35c;
 }
 
-.text-white{
+.text-white {
     color: white;
 }
-
 
 .footer-links {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .footer-links ul {
     list-style: none;
@@ -85,19 +79,20 @@ ul li a {
     color: white;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: #31d35c;
 
 }
 
 .footer-right {
+    display: flex;
     flex-direction: column;
     position: absolute;
     right: 80px;
 }
 
 
-#request-invitebtn{
+#request-invitebtn {
     width: 100%;
     height: 100%;
     border-radius: 50px;
@@ -108,6 +103,7 @@ ul li a:hover{
     color: white;
     font-weight: 300;
     font-size: 14px;
+
 }
 
 #request-invitebtn {
@@ -119,4 +115,46 @@ ul li a:hover{
 
 h6 span {
     font-family: 'Public Sans', sans-serif;
+}
+
+
+@media screen and (max-width: 992px) {
+    .footer {
+        height: 500px;
+    }
+
+    .footer-contain {
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-footer {
+        margin-bottom: 0;
+    }
+.icons{
+    padding: 10px 0;
+}
+    .footer-links ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 100%
+    }
+
+    .footer-links ul li {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .footer-right {
+        bottom: 0;
+        position: relative;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

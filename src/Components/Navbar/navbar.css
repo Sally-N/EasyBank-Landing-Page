@@ -5,7 +5,7 @@
     overflow: hidden;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -42,7 +42,6 @@
     position: relative;
 }
 
-
 .navbarNavbar ul li a::after {
     content: '';
     width: 0;
@@ -52,18 +51,18 @@
     background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
     bottom: -20px;
     left: 0;
+    opacity: 0;
 }
-
 
 .navbarNavbar ul li a:hover {
     color: #2d314d;
 }
 
-.navbarNavbar ul li a:hover::after{
+.navbarNavbar ul li a:hover::after {
     width: 100%;
     transition: width 0.2s;
+    opacity: 1;
 }
-
 
 .navbar .invitation {
     width: 160px;
@@ -84,51 +83,65 @@
     font-size: 14px;
 }
 
-.modal-invisible {
+.modal {
+    position: absolute;
+    top: 70px;
+    height: 0px;
+    width: 96%;
+    margin: 0 20px 0 20px;
+    z-index: 2;
+    background-color: white;
     display: none;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#modal {
+.modal.open {
     height: 200px;
-    width: 150px;
+}
+
+.modal .mobile-modal {
     display: flex;
     flex-direction: column;
-}
-
-#modal .mobile-modal {
-    height: 100%;
-    width: 100%;
-}
-
-.mobile-modal .mobileMenuitem {
-    list-style: none;
-    font-size: 20px;
     align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
 
+.mobile-modal li {
+    list-style: none;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.mobile-modal li a {
+    color: #9698a6;
+    font-family: 'Public Sans', sans-serif;
+
+}
+
+.menuBtn {
+    display: none;
 }
 
 
 @media screen and (min-width: 768px) {
-
     .navbar {
         height: 65px;
     }
 }
 
 
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 992px) {
 
-    .navbar ul {
-        display: none;
-    }
-
-    #menuBtn {
-        display: contents;
-    }
-
+    .navbar ul,
     .invitation {
         display: none;
     }
 
-
+    .modal,
+    .menuBtn {
+        display: block;
+    }
 }

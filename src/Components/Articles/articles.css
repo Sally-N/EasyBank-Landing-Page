@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 .articlesSection {
-    /* border: solid 2px black; */
+    border: solid 2px black;
     height: 750px;
     background-color:hsl(0, 0%, 98%)
 }
 
 .allArticles{
-    /* border: solid 2px green; */
+    border: solid 2px green;
     padding-top: 70px;
+    height: 100%;
 }
 
 .allArticles h2 {
@@ -19,6 +20,8 @@
 }
 
 .articles {
+    width: 100%;
+    display: flex;
     flex-wrap: row wrap;
     margin-top: 40px;
     background-color: hsl(0, 0%, 98%);
@@ -81,12 +84,31 @@
 
 }
 
-@media screen and (min-width: 1024px){
-   .articlesSection{ height: 700px;
+@media screen and (max-width: 992px){
+    .articlesSection { 
+    height: 2470px;
    }
 
-   .allArticles{
-    padding-top: 80px;
+   .allArticles {
+    padding-top: 50px;
+    height: 100%;
    }
+
+
+   .articles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+
+   .articleSingle{
+    width: 100%;
+   }
+
+   .articleSingle .imageA {
+    height: 400px;
+   }
+
+
     
 }

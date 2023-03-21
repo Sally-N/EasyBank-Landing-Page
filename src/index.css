@@ -1,1 +1,9 @@
+#body{
+    height: 2480px;
+}
 
+@media screen and (max-width: 992px){
+    #body {
+        height: 4000px;
+    }
+}

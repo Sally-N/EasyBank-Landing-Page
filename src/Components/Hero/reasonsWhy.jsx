@@ -59,7 +59,7 @@ export const ReasonsWhy = () => {
 
             <div className="why-easybank">
                 <div className="container">
-                    <div className="why-eaybankection">
+                    <div className="why-easybanksection">
                         <div className="text-content">
 
                             <h5>
@@ -69,7 +69,7 @@ export const ReasonsWhy = () => {
                                 financial hub. Control your finances like never before.</p>
 
                         </div>
-                        <div className="reasonswhygrid row">
+                        <div className="reasonswhygrid">
                             {
                                 reasonsWhyItems.map((item) =>
                                     <div key={item.title} className="reason col">
