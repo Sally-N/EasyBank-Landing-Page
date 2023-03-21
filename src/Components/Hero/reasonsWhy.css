@@ -24,6 +24,7 @@
 }
 
 .imagemock {
+    display: flex;
     height: 100%;
     width: 55%;
     border: 2px solid black;
@@ -165,49 +166,52 @@
 @media screen and (max-width: 992px) {
 
     .reasonsSection {
-        height: 2600px;
+        height: 1850px;
         border: solid 2px red;
         padding: 0;
     }
 
     .content {
-        flex-direction: column;
-        background-position-x: -300px;
-        background-position-y: -600px;
+        flex-direction: column-reverse;
+        background-position-x: -250px;
+        background-position-y: -550px;
         border: solid 2px green;
         height: 60%;
     }
 
     .imagemock {
+        align-self: center;
         border: 2px solid black;
         height: 65%;
-        width: 80%;
+        width: 70%;
     }
 
     .imagemock img {
         float: none;
-        transform: translate(0px, -175px);
+        transform: translate(0px, -185px);
     }
 
     .next-generation {
-        height: 35%;
+        height: 30%;
         padding: 0;
         width: 100%;
+        align-items: center;
     }
 
     .next-generation h2 {
         font-weight: 400;
-        font-size: 50px;
+        font-size: 40px;
         color: hsl(233, 26%, 24%);
         font-family: 'Public Sans', sans-serif;
         margin-bottom: 0;
         padding-bottom: 20px;
-        text-align: left;
+        text-align:center;
     }
 
     .next-generation p {
-        text-align: left;
+        text-align: center;
         font-size: initial;
+        font-size: 16px;
 
     }
 
@@ -221,10 +225,11 @@
         width: 100%;
         padding: 40px 0 0 0;
         margin: 0 0 50px 0;
+        text-align: center;
     }
 
     .text-content h5 {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .reasonswhygrid {
@@ -249,6 +254,9 @@
     .reason p {
         text-align: center;
     }
+
+
+
 
 
 
