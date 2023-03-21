@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 .navbar {
+    padding: 5px 0 0 0;
     overflow: hidden;
     position: sticky;
     top: 0;
@@ -8,6 +9,7 @@
     background-color: white;
     display: flex;
     flex-direction: row;
+    align-items: center;
     height: 80px;
     width: 100%;
 }
@@ -17,17 +19,15 @@
     height: 100%;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
 }
 
-.navbarNavbar .logo {
-    justify-content: center;
-}
 
 .navbarNavbar ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .navbarNavbar ul li {
@@ -39,41 +39,31 @@
 .navbarNavbar ul li a {
     color: #9698a6;
     font-family: 'Public Sans', sans-serif;
+    position: relative;
+}
+
+
+.navbarNavbar ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    margin: auto;
+    position: absolute;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+    bottom: -20px;
+    left: 0;
 }
 
 
 .navbarNavbar ul li a:hover {
     color: #2d314d;
-
 }
 
-.navbarNavbar ul li a::after {
-    content: "";
-    position: absolute;
-    background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
-    background-image: linear-gradient(to right, #31d35c, #2bb7da);
-    height: 3px;
-    width: 45px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    top: 3rem;
-    overflow: hidden;
-    opacity: 0;
+.navbarNavbar ul li a:hover::after{
+    width: 100%;
+    transition: width 0.2s;
 }
 
-.navbar ul li a:hover::after {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    top: 4.7rem;
-    opacity: 1;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
 
 .navbar .invitation {
     width: 160px;
@@ -132,7 +122,7 @@
         display: none;
     }
 
-    #menuBtn{
+    #menuBtn {
         display: contents;
     }
 
