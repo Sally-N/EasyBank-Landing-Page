@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 .articlesSection {
-    border: solid 2px black;
+    /* border: solid 2px black; */
     height: 750px;
     background-color:hsl(0, 0%, 98%)
 }
 
 .allArticles{
-    border: solid 2px green;
+    /* border: solid 2px green; */
     padding-top: 70px;
     height: 100%;
 }
@@ -43,8 +43,6 @@
     height: 180px;
     width: 100%;
     padding: 0;
-
-
 }
 
 .imageA img {

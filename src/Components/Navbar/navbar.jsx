@@ -53,13 +53,16 @@ export const MobileModal = () => {
 }
 
 const menuBtn = document.querySelector('.menuBtn');
+console.log(menuBtn)
 const menuModal = document.querySelector('.modal');
 
+
 if(menuBtn){
-    menuBtn.onclick = function(){
+    menuBtn.onclick = function(){        
         menuModal.classList.toggle('open'); 
      }
 }
+
 
 
 
