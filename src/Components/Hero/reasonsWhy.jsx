@@ -39,7 +39,7 @@ const reasonsWhyItems = [
 export const ReasonsWhy = () => {
     return (
         <section className="reasonsSection">
-             <div className="bg-header-mobile bg-custom-mobile-header-size absolute w-full h-full bg-no-repeat lg:hidden"></div>
+             <div className=""></div>
             <div className="content">
                 <div className="next-generation">
                     <h2>

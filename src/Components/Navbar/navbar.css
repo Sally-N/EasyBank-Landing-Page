@@ -84,22 +84,25 @@
 }
 
 .modal {
-    position: absolute;
-    top: 70px;
-    height: 0px;
-    width: 96%;
-    margin: 0 20px 0 20px;
-    z-index: 20;
+    position: fixed;
+    top: 100px;
+    height: 00px;
+    width: 94%;
+    z-index: 3;
+    margin: auto 3%;
     background-color: white;
     display: none;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.modal.open {
-    height: 200px;
+ .open {
+    position: fixed;
+    display: contents;
+    height: 220px;
+    overflow: hidden;
 }
 
-.modal .mobile-modal {
+ .mobile-modal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,20 +112,22 @@
 
 .mobile-modal li {
     list-style: none;
-    font-size: 16px;
+    font-size: 18px;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
 }
 
 .mobile-modal li a {
-    color: #9698a6;
+    color: #2d314d;
     font-family: 'Public Sans', sans-serif;
 
 }
 
 .menuBtn {
+    border: none;
     display: none;
+    background: none;
 }
 
 
