@@ -16,32 +16,30 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    opacity: 1;
-
+    overflow: visible;
 }
 
 .imagemock {
     padding: 0;
     margin: 0;
     right: 0;
-    position: absolute;
     display: flex;
-    max-height: 100%;
+    height: 100%;
     width: 55%;
 }
 
 .imagemock img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    float: right;
+    height: fit-content;
+    width: 100%;
     transform: translate(100px, -70px);
+
 }
 
 .next-generation {
     height: 100%;
     margin-top: 0;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -62,7 +60,7 @@
 
 .next-generation p {
     color: hsl(233, 8%, 62%);
-    width: auto;
+    width: 90;
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
     margin-bottom: 0;
@@ -169,7 +167,6 @@
 @media screen and (max-width: 992px) {
     .reasonsSection {
         height: 2400px;
-        padding: 0;
         overflow: visible;
     }
 
@@ -194,7 +191,6 @@
     .imagemock img {
         max-width: 100%;
         max-height: 100%;
-        float: none;
         transform: translate(5px, -150px);
     }
 
@@ -226,7 +222,7 @@
 
     .why-easybank {
         height: 45%;
-        
+
     }
 
     .text-content {
@@ -317,57 +313,60 @@
 
 
 @media screen and (max-width: 540px) {
-.reasonsSection {
-    height: 1750px;
+    .reasonsSection {
+        height: 1750px;
+    }
+
+    .content {
+        height: 40%;
+        background-position-y: -190px;
+    }
+
+
+    .next-generation h2 {
+        width: 100%;
+    }
+
+    .why-easybank {
+        height: 60%;
+    }
+
+
 }
 
-.content {
-    height: 40%;
-    background-position-y: -190px;
-}
-
-
-.next-generation h2{
-    width: 100%;
-}
-.why-easybank {
-    height: 60%;
-}
-
-
-}
-
-@media screen and (min-width: 375px){
-    .reasonsSection{
+@media screen and (max-width: 490px) and (min-width: 375px) {
+    .reasonsSection {
         height: 1900px;
     }
-    .content{
+
+    .content {
         background-position-y: -0px;
     }
+
     .imagemock {
         width: 100%;
         height: 70%;
         margin: 0;
     }
 
-    .imagemock img{
+    .imagemock img {
         transform: translate(0px, -100px);
     }
 
-  .why-easybank{
-    padding: 50px 0 0 0;
-  }
+    .why-easybank {
+        padding: 50px 0 0 0;
+    }
 
-  .text-content{
-    width: 100%;
-  }
+    .text-content {
+        width: 100%;
+    }
 
-  .text-content h5{
-    font-size: 30px;
-  }
+    .text-content h5 {
+        font-size: 30px;
+    }
 
- .reason h2{
-    font-weight: 300;
- }
-    
+    .reason h2 {
+        font-weight: 300;
+    }
+
 }
