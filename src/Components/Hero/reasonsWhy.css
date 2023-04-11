@@ -5,6 +5,7 @@
 }
 
 .content {
+    padding: 0;
     width: 100%;
     height: 45%;
     background-image: url('../images/bg-intro-desktop.svg');
@@ -88,6 +89,7 @@
 }
 
 .why-easybank {
+    padding: 0;
     background-color: #f3f4f6;
     height: 55%;
 }
@@ -119,7 +121,6 @@
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
     color: hsl(233, 8%, 62%);
-    border: red 2px solid;
 }
 
 .reasonswhygrid {
@@ -166,19 +167,16 @@
 
 
 @media screen and (max-width: 992px) {
-
     .reasonsSection {
         height: 2400px;
-        border: solid 2px red;
         padding: 0;
         overflow: visible;
     }
 
     .content {
         height: 55%;
-        background-image: url('../images/bg-intro-mobile.svg');        
+        background-image: url('../images/bg-intro-mobile.svg');
         flex-direction: column-reverse;
-        border: solid 2px green;
         background-position-x: 0px;
         background-position-y: -240px;
         background-size: contain;
@@ -187,15 +185,17 @@
     .imagemock {
         position: relative;
         height: 80%;
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
+        float: none;
 
     }
 
     .imagemock img {
-        max-width: 70%;
+        max-width: 100%;
         max-height: 100%;
         float: none;
-        transform: translate(135px, -150px);
+        transform: translate(5px, -150px);
     }
 
     .next-generation {
@@ -226,8 +226,7 @@
 
     .why-easybank {
         height: 45%;
-        /* height: 1100px; */
-        border: solid 2px blue;
+        
     }
 
     .text-content {
@@ -274,4 +273,101 @@
     .reason p {
         font-size: 16px;
     }
+}
+
+
+@media screen and (max-width: 768px) {
+    .reasonsSection {
+        height: 2100px;
+    }
+
+    .content {
+        height: 48%;
+        background-position-y: -240px;
+    }
+
+    .imagemock {
+        margin: auto;
+        height: 55%;
+        width: 65%;
+    }
+
+
+    .imagemock img {
+        max-width: 100%;
+        max-height: 100%;
+        transform: translate(00px, -90px);
+
+    }
+
+    .next-generation {
+        padding: 10px 0 0 0;
+    }
+
+    .next-generation p {
+        width: 95%;
+    }
+
+    .why-easybank {
+        height: 52%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 540px) {
+.reasonsSection {
+    height: 1750px;
+}
+
+.content {
+    height: 40%;
+    background-position-y: -190px;
+}
+
+
+.next-generation h2{
+    width: 100%;
+}
+.why-easybank {
+    height: 60%;
+}
+
+
+}
+
+@media screen and (min-width: 375px){
+    .reasonsSection{
+        height: 1900px;
+    }
+    .content{
+        background-position-y: -0px;
+    }
+    .imagemock {
+        width: 100%;
+        height: 70%;
+        margin: 0;
+    }
+
+    .imagemock img{
+        transform: translate(0px, -100px);
+    }
+
+  .why-easybank{
+    padding: 50px 0 0 0;
+  }
+
+  .text-content{
+    width: 100%;
+  }
+
+  .text-content h5{
+    font-size: 30px;
+  }
+
+ .reason h2{
+    font-weight: 300;
+ }
+    
 }
