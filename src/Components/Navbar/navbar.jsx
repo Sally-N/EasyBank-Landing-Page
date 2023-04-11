@@ -1,6 +1,7 @@
 import "./navbar.css";
 import logo from "../images/logo.svg"
 import menuIcon from "../images/icon-hamburger.svg"
+import closeButton from "../images/icon-close.svg"
 
 export const Navbar = () => {
     return (
@@ -24,8 +25,9 @@ export const Navbar = () => {
                     <div className="invitation">
                         <button className="invitation-btn">Request Invite</button>
                     </div>
-                    <button className="menuBtn">
-                        <img src={menuIcon} alt="menuImage" />
+                    <button>
+                        <img src={menuIcon} alt="menuImage" id="menu" className="menuBtn"/>
+                        <img src={closeButton} alt= "closeModal" className="close"/>
                     </button>
                 </div>
 
@@ -54,16 +56,28 @@ export const MobileModal = () => {
 
 
 window.addEventListener("load", function(){
-    const menuBtn = document.querySelector('.menuBtn');
-    console.log(menuBtn)
+    const menuBtn = document.getElementById('menu');
     const menuModal = document.querySelector('.modal');
+    const closeBtn = document.querySelector('.close');
     
     
     if(menuBtn){
-        menuBtn.onclick = function(){        
+        menuBtn.onclick = function(){  
+            menuBtn.style.display = 'none'
             menuModal.classList.toggle('open'); 
+            closeBtn.classList.replace('close', 'active')
          }
-    }
+
+};
+
+
+if(closeBtn){
+closeBtn.onclick = function(){
+    menuBtn.style.display = 'block'
+    menuModal.classList.toggle('open')
+    closeBtn.classList.replace('active', 'close')
+}}
+
 });
 
 

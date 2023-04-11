@@ -96,7 +96,6 @@
 }
 
  .open {
-    position: fixed;
     display: contents;
     height: 220px;
     overflow: hidden;
@@ -130,10 +129,22 @@
     background: none;
 }
 
+.close{
+    display: none;
+}
 
 
+
+button{
+    border: none;
+    background: transparent;
+}
 
 @media screen and (max-width: 992px) {
+
+    .active{
+        display: block;
+    }    
 
     .navbar ul,
     .invitation {
